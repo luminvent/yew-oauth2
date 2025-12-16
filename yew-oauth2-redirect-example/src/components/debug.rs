@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_oauth2::prelude::*;
 
-#[function_component(Debug)]
+#[component(Debug)]
 pub fn debug() -> Html {
     let auth = use_context::<OAuth2Context>();
 

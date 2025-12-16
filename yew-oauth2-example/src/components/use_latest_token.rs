@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_oauth2::prelude::*;
 
-#[function_component(UseLatestToken)]
+#[component(UseLatestToken)]
 pub fn use_latest_token() -> Html {
     let latest_token = use_latest_access_token().unwrap();
 

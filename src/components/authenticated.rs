@@ -12,7 +12,7 @@ pub struct AuthenticatedProperties {
 }
 
 /// A Yew component, rendering when the agent is authenticated.
-#[function_component(Authenticated)]
+#[component(Authenticated)]
 pub fn authenticated(props: &AuthenticatedProperties) -> Html {
     let auth = use_context::<OAuth2Context>();
 

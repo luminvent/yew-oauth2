@@ -19,7 +19,7 @@ pub struct FailureProps {
     pub children: Children,
 }
 
-#[function_component(Failure)]
+#[component(Failure)]
 pub fn failure(props: &FailureProps) -> Html {
     let auth = use_context::<OAuth2Context>();
 
@@ -54,7 +54,7 @@ pub struct FailureMessageProps {
     pub element: Option<String>,
 }
 
-#[function_component(FailureMessage)]
+#[component(FailureMessage)]
 pub fn failure_message(props: &FailureMessageProps) -> Html {
     let auth = use_context::<OAuth2Context>();
 

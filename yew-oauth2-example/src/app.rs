@@ -20,7 +20,7 @@ pub enum AppRoute {
     Index,
 }
 
-#[function_component(Content)]
+#[component(Content)]
 pub fn content() -> Html {
     let agent = use_auth_agent().expect("Requires OAuth2Context component in parent hierarchy");
 
@@ -100,7 +100,7 @@ pub fn content() -> Html {
     )
 }
 
-#[function_component(Application)]
+#[component(Application)]
 pub fn app() -> Html {
     #[cfg(not(feature = "openid"))]
     let config = Config::new(

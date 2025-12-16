@@ -2,7 +2,7 @@ use super::ViewAuthContext;
 use yew::prelude::*;
 use yew_oauth2::prelude::*;
 
-#[function_component(ViewAuthInfoFunctional)]
+#[component(ViewAuthInfoFunctional)]
 pub fn view_info() -> Html {
     let auth = use_context::<OAuth2Context>();
 

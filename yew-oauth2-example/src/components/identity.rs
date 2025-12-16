@@ -1,7 +1,7 @@
 use yew::prelude::*;
 use yew_oauth2::prelude::*;
 
-#[function_component(ViewIdentity)]
+#[component(ViewIdentity)]
 pub fn view_identity() -> Html {
     let auth = use_context::<OAuth2Context>();
 

@@ -19,7 +19,7 @@
 //! use yew_oauth2::prelude::*;
 //! use yew_oauth2::oauth2::*; // use `openid::*` when using OpenID connect
 //!
-//! #[function_component(MyApplication)]
+//! #[component(MyApplication)]
 //! fn my_app() -> Html {
 //!   let config = Config::new(
 //!     "my-client",
@@ -34,7 +34,7 @@
 //!   )
 //! }
 //!
-//! #[function_component(MyApplicationMain)]
+//! #[component(MyApplicationMain)]
 //! fn my_app_main() -> Html {
 //!   let agent = use_auth_agent().expect("Must be nested inside an OAuth2 component");
 //!

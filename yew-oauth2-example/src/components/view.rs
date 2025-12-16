@@ -6,7 +6,7 @@ pub struct ContextProps {
     pub auth: OAuth2Context,
 }
 
-#[function_component(ViewAuthContext)]
+#[component(ViewAuthContext)]
 pub fn view_context(props: &ContextProps) -> Html {
     html!(
         <dl>
@@ -25,7 +25,7 @@ pub struct AuthProps {
     pub auth: Authentication,
 }
 
-#[function_component(ViewAuthInfo)]
+#[component(ViewAuthInfo)]
 pub fn view_auth(props: &AuthProps) -> Html {
     html!(
         <dl>

@@ -25,7 +25,7 @@ fn dummy() -> Authentication {
     }
 }
 
-#[function_component(ViewUseAuth)]
+#[component(ViewUseAuth)]
 pub fn view_use_auth(props: &Props) -> Html {
     html!(
         <>

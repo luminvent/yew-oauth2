@@ -56,7 +56,7 @@ where
 ///    }
 /// }
 ///
-/// #[function_component(ViewUseAuth)]
+/// #[component(ViewUseAuth)]
 /// pub fn view_use_auth(props: &Props) -> Html {
 ///     html!(
 ///         <>
@@ -66,7 +66,7 @@ where
 ///     )
 /// }
 /// ```
-#[function_component(UseAuthentication)]
+#[component(UseAuthentication)]
 pub fn use_authentication<C>(props: &UseAuthenticationComponentProperties<C>) -> Html
 where
     C: BaseComponent,
